@@ -1,0 +1,15 @@
+{
+    "sources": [
+        {
+            "service": "users",
+            "path": "data/users.json",
+            "type": "json"
+        },
+        {
+            "service": "roles",
+            "path": "data/roles.csv",
+            "type": "csv"
+        }
+    ],
+    "constraints": "constraints.json"
+}

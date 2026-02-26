@@ -1,0 +1,20 @@
+{
+    "sources": [
+        {
+            "service": "users",
+            "path": "data/users.json",
+            "type": "json"
+        },
+        {
+            "service": "orders",
+            "path": "data/orders.json",
+            "type": "json"
+        },
+        {
+            "service": "products",
+            "path": "data/products.json",
+            "type": "json"
+        }
+    ],
+    "constraints": "constraints.json"
+}

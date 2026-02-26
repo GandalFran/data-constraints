@@ -1,0 +1,31 @@
+{
+    "constraints": {
+        "format": [
+            {
+                "id": "email-check",
+                "service": "users",
+                "field": "email",
+                "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+                "message": "Invalid email: {{email}}"
+            }
+        ],
+        "unique": [
+            {
+                "id": "unique-id",
+                "service": "users",
+                "field": "id",
+                "message": "Duplicate ID"
+            }
+        ],
+        "foreign-key": [
+            {
+                "id": "user-role-link",
+                "service": "users",
+                "field": "roleId",
+                "referenceService": "roles",
+                "referenceField": "id",
+                "message": "User has invalid role ID: {{roleId}}"
+            }
+        ]
+    }
+}

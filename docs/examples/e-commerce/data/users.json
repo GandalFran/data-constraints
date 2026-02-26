@@ -1,0 +1,62 @@
+[
+    {
+        "id": "u1",
+        "profile": {
+            "name": "Alice Smith",
+            "contact": {
+                "email": "alice@example.com",
+                "phones": [
+                    "+1-555-0101",
+                    "+1-555-0102"
+                ]
+            },
+            "address": {
+                "country": "US",
+                "zip": "10001"
+            }
+        },
+        "roles": [
+            "admin",
+            "editor"
+        ],
+        "isActive": true
+    },
+    {
+        "id": "u2",
+        "profile": {
+            "name": "Bob Jones",
+            "contact": {
+                "email": "bob@example.com",
+                "phones": [
+                    "+44-20-7123-4567"
+                ]
+            },
+            "address": {
+                "country": "UK",
+                "zip": "SW1A 1AA"
+            }
+        },
+        "roles": [
+            "viewer"
+        ],
+        "isActive": true
+    },
+    {
+        "id": "u3",
+        "profile": {
+            "name": "Charlie Day",
+            "contact": {
+                "email": "charlie@example.com",
+                "phones": []
+            },
+            "address": {
+                "country": "US",
+                "zip": "90210"
+            }
+        },
+        "roles": [
+            "viewer"
+        ],
+        "isActive": false
+    }
+]

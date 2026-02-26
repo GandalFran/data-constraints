@@ -1,0 +1,17 @@
+[
+    {
+        "id": "u1",
+        "email": "alice@example.com",
+        "roleId": "r1"
+    },
+    {
+        "id": "u2",
+        "email": "bob@example.com",
+        "roleId": "r2"
+    },
+    {
+        "id": "u3",
+        "email": "invalid-email",
+        "roleId": "r99"
+    }
+]

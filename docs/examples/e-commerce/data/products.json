@@ -1,0 +1,42 @@
+[
+    {
+        "id": "p1",
+        "name": "Laptop",
+        "price": 1200,
+        "supplierId": "s1",
+        "allowedRegions": [
+            "US",
+            "CA"
+        ]
+    },
+    {
+        "id": "p2",
+        "name": "Mouse",
+        "price": 25,
+        "supplierId": "s2",
+        "allowedRegions": [
+            "US",
+            "EU"
+        ]
+    },
+    {
+        "id": "p3",
+        "name": "Keyboard",
+        "price": 75,
+        "supplierId": "s1",
+        "allowedRegions": [
+            "UK",
+            "EU"
+        ]
+    },
+    {
+        "id": "p4",
+        "name": "Monitor",
+        "price": 300,
+        "supplierId": "s2",
+        "allowedRegions": [
+            "US",
+            "UK"
+        ]
+    }
+]

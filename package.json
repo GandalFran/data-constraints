@@ -1,0 +1,71 @@
+{
+  "name": "data-constraints",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "bin": {
+    "data-constraints": "src/cli.js"
+  },
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:types": "tsc",
+    "build": "npm run clean && npm run build:types",
+    "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\"",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
+    "test": "jest",
+    "build:prev": "npm run lint && npm run test && npm run build",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GandalFran/data-constraints.git"
+  },
+  "keywords": [
+    "data-validation",
+    "json",
+    "csv",
+    "schema-validation",
+    "nodejs",
+    "cli",
+    "typescript"
+  ],
+  "author": "Francisco Pinto-Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GandalFran/data-constraints/issues"
+  },
+  "homepage": "https://github.com/GandalFran/data-constraints#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/jest": "^30.0.0",
+    "@types/lodash": "^4.17.23",
+    "@types/lokijs": "^1.5.14",
+    "@types/node": "^25.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "prettier": "^3.8.1",
+    "rimraf": "^6.1.3",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "csv-parse": "^6.1.0",
+    "lodash": "^4.17.23",
+    "lokijs": "^1.5.12",
+    "stream-chain": "^3.4.0",
+    "stream-json": "^1.9.1",
+    "yaml": "^2.8.2"
+  }
+}

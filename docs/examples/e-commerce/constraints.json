@@ -1,0 +1,86 @@
+{
+    "constraints": {
+        "format": [
+            {
+                "id": "email-format",
+                "service": "users",
+                "field": "profile.contact.email",
+                "regex": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+                "message": "Invalid email format: {{profile.contact.email}}"
+            }
+        ],
+        "foreign-key": [
+            {
+                "id": "link-order-user-active",
+                "service": "orders",
+                "referenceService": "users",
+                "variables": {
+                    "uid": "metadata.userId"
+                },
+                "target": {
+                    "$and": [
+                        {
+                            "id": {
+                                "$eq": "{{uid}}"
+                            }
+                        },
+                        {
+                            "isActive": {
+                                "$eq": true
+                            }
+                        }
+                    ]
+                },
+                "message": "Order refers to inactive or non-existent user {{metadata.userId}}"
+            },
+            {
+                "id": "validate-product-supplier-pair",
+                "service": "orders",
+                "referenceService": "products",
+                "variables": {
+                    "pid": "items.productId",
+                    "sid": "items.supplierId"
+                },
+                "target": {
+                    "$and": [
+                        {
+                            "id": {
+                                "$eq": "{{pid}}"
+                            }
+                        },
+                        {
+                            "supplierId": {
+                                "$eq": "{{sid}}"
+                            }
+                        }
+                    ]
+                },
+                "message": "Invalid Product-Supplier combination: Product {{pid}} is not supplied by {{sid}}"
+            },
+            {
+                "id": "validate-product-region-availability",
+                "service": "orders",
+                "referenceService": "products",
+                "variables": {
+                    "pid": "items.productId",
+                    "orderRegion": "metadata.region"
+                },
+                "target": {
+                    "$and": [
+                        {
+                            "id": {
+                                "$eq": "{{pid}}"
+                            }
+                        },
+                        {
+                            "allowedRegions": {
+                                "$contains": "{{orderRegion}}"
+                            }
+                        }
+                    ]
+                },
+                "message": "Product {{pid}} is not available in region {{orderRegion}}"
+            }
+        ]
+    }
+}
