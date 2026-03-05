@@ -87,12 +87,12 @@ Then you can run `npx data-constraints` from your project folder.
 
 ## 📚 Documentation
 
-For full documentation, guides and advanced use cases, please check the [**docs/ directory**](./docs/).
+For full documentation, guides and advanced use cases, please check the [**docs/ directory**](https://github.com/GandalFran/data-constraints/tree/main/docs).
 
-- **[Key Concepts](./docs/concepts.md)**: Easy-to-understand explanation of file types and constraints.
-- **[User Guide](./docs/guide.md)**: The comprehensive guide to using the CLI and defining rules.
-- **[Integration Guide](./docs/integration.md)**: How to integrate the engine programmatically in Node.js.
-- **[Examples](./docs/examples)**: Runnable examples, ranging from simple to e-commerce.
+- **[Key Concepts](https://github.com/GandalFran/data-constraints/tree/main/docs/concepts.md)**: Easy-to-understand explanation of file types and constraints.
+- **[User Guide](https://github.com/GandalFran/data-constraints/tree/main/docs/guide.md)**: The comprehensive guide to using the CLI and defining rules.
+- **[Integration Guide](https://github.com/GandalFran/data-constraints/tree/main/docs/integration.md)**: How to integrate the engine programmatically in Node.js.
+- **[Examples](https://github.com/GandalFran/data-constraints/tree/main/docs/examples)**: Runnable examples, ranging from simple to e-commerce.
 
 ## 🛠️ Features
 
