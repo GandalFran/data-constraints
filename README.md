@@ -1,5 +1,6 @@
 # Data Constraints
 
+[![npm version](https://badge.fury.io/js/data-constraints.svg)](https://badge.fury.io/js/data-constraints)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 ![Coverage](https://img.shields.io/badge/coverage-90%25-brightgreen.svg)
