@@ -5,7 +5,7 @@
 ![Node.js](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)
 ![Coverage](https://img.shields.io/badge/coverage-90%25-brightgreen.svg)
 [![CI](https://github.com/GandalFran/data-constraints/actions/workflows/ci.yml/badge.svg)](https://github.com/GandalFran/data-constraints/actions/workflows/ci.yml)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/GandalFran/data-constraints/compare)
 
 **Data Constraints** is the easiest way to validate your data streams. Whether you have small JSON files or massive CSV dumps, this tool ensures your data isn't garbage.
 
