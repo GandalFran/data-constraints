@@ -1,7 +1,7 @@
 {
   "name": "data-constraints",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "The easiest way to validate your data consistency. Ensure the quality of your files without writing code",
   "main": "src/index.js",
   "bin": {
     "data-constraints": "src/cli.js"
